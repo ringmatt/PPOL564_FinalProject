@@ -1,0 +1,33 @@
+Eric LaRose comments: 
+
+There are a number of important cultural differences and anchoring effects that make many people skeptical of the validity of happiness ratings across countries. 
+I would suggest including country dummy variables (I.e., fixed effects) in your models so that you're looking at how happiness varies within a country as these factors change over time, 
+rather than looking at how happiness varies both over time and across countries.
+
+
+Eric LaRose , Nov 5 at 7:38pm
+
+Idea: Examine the factors that are predictive of happiness/life satisfaction. 
+
+Data: 
+1. Hone in on one "happiness" metric and use that as your outcome. This will be easier than building many different models with different measures of happiness. 
+Technically all the happiness/LS measures should be highly correlated with one another. If they're not, you should explore why. 
+For example, the self-reporting in OWiD might make it more likely to over-report happiness levels vis-as-vis a more objective third party measure. 
+Generally, for this project, I think you should use the measure that has the longest time series. 
+
+2. I'm glad that you're interested in the POLITY data. I agree that political and regime questions are key to understanding society-wide efficiency metrics like satisfaction. 
+One data source that you might find really useful for this project is the Varieties of Democracy (VDEMs) dataset. 
+This data captures a lot of social-civic characteristics of a country but also equality and government encroachments. Look at these data. 
+I think you'll see their value on this prediction task right away, and the insights you pull from this model could be really illuminating. 
+
+3. We'll talk about interpretability methods for ML models on week 13. So the reliance on "coefficients" isn't necessary. 
+We have ways of easily backing out marginal effects from more flexible (and usually more predictive) models. 
+
+Overall: Sounds like a great project! Really interested in seeing what you come up with (especially if you decide to incorporate the VDEMs data)
+
+My Notes:
+
+1) Explore fixed effects by adding a country dummy variable
+2) Use the happiness variable with the longest time series
+3) Look into the Varieties of Democracy (VDEMs) dataset
+4) Look into interpretability methods

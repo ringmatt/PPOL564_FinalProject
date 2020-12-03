@@ -1,0 +1,47 @@
+What follows are the VDEM variables I believe will be most useful:
+
+1) v2x_libdem - (scale of 0 to 1)
+2) v2x_partipdem - (scale of 0 to 1)
+3) v2x_delibdem - (scale of 0 to 1)
+4) v2x_egaldem - (scale of 0 to 1)
+5) v2x_suffr - Percent of the adult populace able to vote
+6) v2clstown - Economy ownership by the state (0 = most control)
+7) v2svindep - Independent state binary
+8) v2csreprss - Repression of civil society organizations (0 = most control, 4 = least control)
+9) v2csrlgrep - Repression of religion (0 = most severe, 4 = lease severe)
+10) v2mecenefm - Government censorship of the media (0 = most severe)
+11) v2mecenefi - Internet centsorship (0 = most severe)
+12) v2mebias - Media Bias (0 = most severe)
+13) v2peedueq - Educational Equality impact on political equality (0 = most unequal)
+14) v2pehealth - Health Equality impact on political equality (0 = most unequal)
+15) v2pepwrses - Power Dist by Socioeconomic status (0 = most unequal)
+16) v2clgencl - Gender Equality (0 = women have fewer civil liberties)
+17) v2clpolcl - Political Group Equality (0 = some political gruops have few civil liberties)
+18) v2exl_legitideolcr_0 - Nationalist binary
+19) v2exl_legitideolcr_1 - Socialist binary
+20) v2exl_legitideolcr_2 - Conservative binary
+21) v2exl_legitideolcr_4 - Religious binary
+21) v2cacamps - Political polarization (0 = lease severe)
+22) v2caviol - Political violence (0 = least severe)
+23) v2caassemb - Right to Assemble (0 = never allowed)
+24) v2cagenmob - Mass Mobilization (0 = never)
+25) v2cafexch - Feedom of Academic Exchange (0 = restricted)
+26) v2x_polyarchy - Electoral democracy (scale of 0 to 1)
+
+Ones I am currently using:
+1) v2x_polyarchy
+2) v2x_suffr
+3) v2clstown [NOT FOUND]
+4) v2svindep [NOT FOUND]
+5) v2csreprss
+6) v2csrlgrep
+7) v2mecenefm
+8) v2mecenefi
+9) v2clgencl
+10) v2exl_legitideolcr_0 [NOT FOUND]
+11) v2exl_legitideolcr_1 [NOT FOUND]
+12) v2exl_legitideolcr_2 [NOT FOUND]
+13) v2cacamps [NOT FOUND]
+14) v2caassemb [NOT FOUND]
+15) v2cafexch 
+16) v2x_regime - regimes (0 = Closed autocracy)

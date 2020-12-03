@@ -1,0 +1,158 @@
+[SLIDE 0] - Problem Statement
+
+[SLIDE 1] - Background
+
+## Reasoning
+* Spend 1/3 of your adult life at work (WHO)
+
+## Data
+* Sources
+    * Labor Statistics
+    * Happiness 
+    * Polity Data
+    * GDP per Capita
+	
+[SLIDE 1.1]
+
+* Inputs - 11 Features Available
+	* Labor, Polity, Economic
+* 1 Output - 0 to 10 Cantril's Ladder
+
+[SLIDE 2] - Methods Considered
+
+## 1. Data
+    
+## 2. Models
+* Models - Wanted at least one that was interpretable and one that was accurate
+* Assessment
+    * Mean Squared Error (MSE)
+* Cross Validation
+    * K-Fold
+    * Bootstrapping   
+
+## 3. Visualizations
+* Correlation Matrix - Multicollinearity
+* Feature Importance Bar Chart
+* Cross Validation Learning Curves - Overfitting
+
+[SLIDE 3] - Methods Used
+
+## 1. Data
+
+* Cleaning
+    * Removed data missing all but life satisfaction
+
+* Feature Engineering
+    * Fractional Inequality - Top 20%'s earnings / bottom 20%'s
+    * Differential Inequality - Top 20%'s - Bottom 50%'s
+
+* Elimination
+    * Avoid multicollinearity
+	
+* Cross-Validation
+    * K-Fold
+	
+* Preprocessing - Continuous variables only
+    * Scales to unit variance and sets the mean to 0
+    
+### Constructed Datasets
+
+1. Full Data
+    * More observations, more features, more NaNs
+2. Restricted Data
+    * Fewer observations, fewer features, no NaNs
+3. Imputed Data
+	* Sci-kit learn's built in function
+    * More observations, more features, no NaNs, questionsable filled values
+
+
+[SLIDE 3.1] - Correlation Matrix
+
+* Includes variables found in the imputed data
+* The restricted data does not contain average work week hour or Union Coverage
+* Removed the redundant variables  Differential Inequality, Union Density, and Democracy,
+	* Just different versions of Fractional Inequality, Union Coverage, and Electoral Democracy Index
+* Uses Person's r, where .3 is a moderate correlation and .5 is strong or large. No points approach a strong correlation
+	
+[SLIDE 4] - Methods Used (Continued)
+
+## 2. Algorithms
+
+1. LR
+    * Rationale - Interpretable
+	* Issue: - Not accurate for complex relationships
+2. KNN
+    * Rationale - Accuracte - Good for low dimensional datasets?
+	* Issue: Scales poorly - Runs slowly
+3. SVR
+    * Rationale - Accurate - Good for Complex Data
+	* Issue: Very difficult to interpret
+4. Random Forest
+    * Rationale - Interpretable
+	
+## 3. Fixed Effects
+
+* Cultural difference that impact self-reported happiness
+	
+[SLIDE 5] - Preliminary Results
+
+## Best Model
+* Restricted Data
+	* KNN was always the best performing algorithm
+* Imputed Data - Used KNN but had an MSE of 0.23
+
+## Fixed Effects OLS
+
+* Ran on each datasets
+
+* Significant variables
+
+* Not including the countries
+
+* and their coefficients
+
+[SLIDE 5.1] - Feature Importances
+
+* Notice GDP's high importance and Inequality's meh importance
+	
+[SLIDE 6] - Preliminary Conclusions
+
+2. Most Important Feature(s)
+    * GDP in KNN - Highest feature importance
+    * AFI in Fixed Effect - Most commonly significant
+        * But it has completely different effects when using the restricted data
+
+# <u> Lessons Learned / Future Work <u>    
+    
+## 1) Data Sparsity
+
+* Goal was to determine the impact of work statistics on happiness
+
+* Had to remove them to make effective models
+
+* Monthly earnings - Multicolinear with GDP?
+	
+## 2) Models
+* Other Models
+    * Have not performed well with any subset of hypterparameters
+* Cross Validation
+	* Learning curves
+    * Overfitting?
+	
+[SLIDE 7] - Lessons Learned Cont.
+    
+## 3) Interpretations
+* Partial Dependency Plots
+	* Impact of features of interest, such as inequality or wages
+* Fixed Effects
+	* How to assess the impact of different variables within a country
+* Feature Importances
+    * For regression
+
+
+Thanks for watching! Excited for the feedback	
+	
+	
+	
+	
+	

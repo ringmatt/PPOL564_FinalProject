@@ -1,0 +1,19 @@
+1) Sparsity of the Data
+
+What should I do about how sparse some of this ILO data is? 
+What I've tried:
+* Imputation
+* Removing sparse variables (Restricted Dataset)
+
+2) Imputing
+
+Should I even be imputing the data? I'm imputing without the output variable, etc. but the results are hardly better than the models where the imputed data is not present.
+Eric mentioned that it would be best to treat each county as a fixed effect. That said, the way I impute means each country is tied together. I need a way to impute for each country, including the ones with no data for particular features.
+
+3) Inequality
+
+Should I use the log of the fractional inequality or the difference inequality?
+
+4) Interpretations
+
+How should I go about creating visualizations for regression models?

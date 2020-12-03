@@ -1,0 +1,6 @@
+1. Run without GDPpc
+    - Correlated with Inequality and may be spoiling the results
+    ! Rose in importance, but not to beyond the Electoral Democracy Index's importance
+2. Use fixed effects
+    - Groupby to fill missing values?
+3. Partial Dependency Plots
