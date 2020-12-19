@@ -1,0 +1,27 @@
+1. Add Mean Monthly Earnings [CHECK]
+	1. See what this correlates with - Especially GDP  [CHECK]
+2. Root Mean Squared Error [CHECK]
+	1. as Standard Deviations of the dependent variable
+3. Learning Curves [CHECK]
+	1. Create for the KNN model's specifications to ensure there isn't any overfitting
+4. Partial Dependency Plots
+	1. Assess for inequality, wages, etc.
+5. Academic Freedom [CHECK]
+	1. Assess differing impact when different variables are present [CHECK]
+	2. Find confounder?
+	3. Remove [CHECK]
+	4. Results
+		1. Removing AFI bring the number of observations up to 1546 from 1240 (25% increase)
+6. Feature Importances
+7. Fixed Effects
+	1. Tradeoff between accuracy and interpretability with many dummy variables?
+	2. Interpretations?
+	3. Results
+		1. Adding Min Wage, Mean Monthly Earnings, and Gender Pay Gap (In any set
+		2. Replacing Average Hours Worked with Min Wage changed the only important feature in the full set from AFI to GDP
+		3. Min Wage will be used as it contains less missing values and has similar collinearity to hours worked
+		4. Addition of Min Wage does not change much
+		5. Removing AFI makes diagonal accountability no longer significant for the restricted and imputed set
+			1. GDPpc becomes significant for the full dataset
+			2. EDI becomes significant for the imputed dataset
+		6. More country effects become significant when removing AFI

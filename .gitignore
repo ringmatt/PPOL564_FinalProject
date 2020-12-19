@@ -5,3 +5,7 @@
 # Images
 *.png
 *.pdf
+
+# Documents
+*.docx
+*.doc
